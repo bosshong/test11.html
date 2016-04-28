@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--表格-->
+    <style>
+        /*table{*/
+        /*/!*border: 1px solid red;*!/*/
+        /*width: 300px;*/
+        /*height: 300px;*/
+        /*/!*border-collapse: collapse; 表格边框被合并为单一边框 默认：separate*!/*/
+        /*/!*border-collapse: collapse;*!/*/
+        /*/!*border-spacing: 列间隔，行间隔 单元格的间距*!/*/
+        /*border-spacing: 20px 10px;*/
+        /*/!*水平对齐 text-align--left center right*!/*/
+        /*text-align: center;*/
+        /*background-color: aqua;*/
+        /*/!*空单元格：empty-cells：show 显示空单元格 hide隐藏空单元格*!/*/
+        /*empty-cells: hide;*/
+
+        /*}*/
+        /*table tr td{*/
+        /*border: 1px solid green;*/
+        /*/!*垂直对齐 vertical-align--top middle bottom*!/*/
+        /*vertical-align:top ;*/
+
+        /*}*/
+        /*/!*如何让表格边框为1px*/
+        /*方法1：用边框的上下左右调整*/
+        /*方法：border-collapse:collapse;*/
+        /**!/*/
+        /*/!*table .c{*!/*/
+        /*/!*background-color: red;*!/*/
+        /*/!*}*!/*/
+
+        /*/!*伪类:hover--鼠标悬停*!/*/
+        /*/!*table tr td:hover{*!/*/
+        /*/!*background-color: red;*!/*/
+        /*/!*}*!/*/
+        /*table tr th:hover{*/
+        /*background-color: red;*/
+
+        /*}*/
+        .t1{
+            width: 600px;
+            height: 400px;
+            /*border: 1px solid red;*/
+            border-spacing: 10px 0px;
+            table-layout: fixed;
+        }
+        .t1 tr td{
+            border: 1px solid red;
+
+        }
+        .t1 tr .d1{
+            width: 20%;
+        }
+        .t1 tr .d2{
+            width: 35%;
+        }
+        .t1 tr .d3{
+            width: 25%;
+        }
+        .t1 tr .d4{
+            width: 20%;
+        }
+    </style>
+</head>
+
+<!--&lt;!&ndash;colspan 列合并-->
+<!--rowspan 行合并-->
+<!--cellspacing 单元格间距-->
+
+<!--&ndash;&gt;-->
+<!--<table cellspacing="0">-->
+<!--&lt;!&ndash;表头&ndash;&gt;-->
+<!--<tr>-->
+<!--<th>t1</th>-->
+<!--<th>t2</th>-->
+<!--<th>t3</th>-->
+<!--</tr>-->
+<!--<tr class="c">-->
+<!--<td colspan="2">a1</td>-->
+<!--<td>a3</td>&lt;!&ndash;列&ndash;&gt;-->
+<!--</tr>&lt;!&ndash;行&ndash;&gt;-->
+<!--<tr>-->
+<!--<td rowspan="2">b1</td>-->
+<!--<td>b2</td>-->
+<!--<td>b3</td>&lt;!&ndash;列&ndash;&gt;-->
+<!--</tr>&lt;!&ndash;行&ndash;&gt;-->
+<!--<tr>-->
+<!--<td>c2</td>-->
+<!--<td>c3</td>&lt;!&ndash;列&ndash;&gt;-->
+<!--</tr>&lt;!&ndash;行&ndash;&gt;-->
+<!--</table>-->
+<table class="t1">
+    <tr>
+        <td class="d1"></td>
+        <td class="d2"></td>
+        <td class="d3"></td>
+        <td class="d4"></td>
+    </tr>
+
+
+</table>
+</body>
+</html>

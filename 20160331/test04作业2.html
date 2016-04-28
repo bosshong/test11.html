@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .a1{
+            text-align: center;
+            table-layout:fixed;
+            border-spacing: 0;
+            border-collapse: collapse;
+
+        }
+        table tr td{
+            border: 1px solid black;
+            width:100px;
+            height: 50px;
+            table-layout:fixed;
+            border-spacing: 0;
+            border-collapse: collapse;
+
+        }
+        .d1{
+            margin-left: 450px;
+            font-weight: bolder;
+        }
+        .d2{
+            margin-left: 770px;
+        }
+        .d3{
+            text-decoration: underline;
+        }
+        .t1{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .d4{
+            width: 60%;
+            height: 100%;
+            border: none;
+
+        }
+        .d5{
+            height: 100%;
+            border: none;
+
+        }
+        .d6{
+            text-decoration: underline;
+        }
+        .h29{
+            text-align: left;
+            background-color: darkgray;
+        }
+        .d7{
+            text-align: left;
+        }
+        .d8{
+            margin-left: 600px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="d1">员工履历表</div>
+<div class="d2">填表日期：<span class="d3"> 年 月 日</span></div>
+<table cellspacing="0" class="a1">
+    <form>
+        <tr class="h1">
+            <td rowspan="3">申请事项</td>
+            <td>职位</td>
+            <td><input type="text" class="t1"></td>
+            <td rowspan="3">渠道</td>
+            <td>应聘方式</td>
+            <td colspan="2"><input type="checkbox" name="c1" value="sz">社招
+                <input type="checkbox" name="c1" value="wl">网络
+                <input type="checkbox" name="c1" value="tj">推荐</td>
+            <td>其他推荐</td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h2">
+            <td>期望薪资</td>
+            <td><input type="text" class="t1"></td>
+            <td>推荐人</td>
+            <td colspan="2">
+                <input type="radio" name="r1" value="ytjr">有推荐人
+                <input type="radio" name="r1" value="wtjr" checked>无推荐人
+            </td>
+            <td>关系</td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h3">
+            <td>其他要求</td>
+            <td><input type="text" class="t1"></td>
+            <td>推荐人</td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td>联系方式</td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h4">
+            <td rowspan="2">应聘人</td>
+            <td>姓名</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+            <td>婚否</td>
+            <td colspan="3">
+                <input type="radio" name="r1" value="y">已
+                <input type="radio" name="r1" value="w">未
+                <input type="radio" name="r1" value="l">离
+                <input type="radio" name="r1" value="qt">其他
+            </td>
+            <td rowspan="5">粘贴照片</td>
+        </tr>
+        <tr class="h5">
+            <td>身份证号</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h6">
+            <td rowspan="2">住址</td>
+            <td >现住址</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+            <td>籍贯</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h7">
+            <td>户口所在</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h8">
+            <td rowspan="2">通讯</td>
+            <td>固定电话</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+            <td>QQ/MSN</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h9">
+            <td>移动电话</td>
+            <td colspan="3"><input type="text" class="t1"></td>
+            <td>电子邮件</td>
+            <td colspan="4"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h10">
+            <td colspan="10">有无疾病史
+                <input type="radio" name="r1" value="nan">无
+                <input type="radio" name="r1" value="nv">有
+                如有，请详细说明：<input type="text" class="d4">
+            </td>
+
+        </tr>
+        <tr class="h11">
+            <td>最高学历</td>
+            <td><input type="text" class="t1"></td>
+            <td>毕业院校</td>
+            <td colspan="4"><input type="text" class="t1"></td>
+            <td>专业</td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h12">
+            <td>专业职称</td>
+            <td><input type="text" class="t1"></td>
+            <td>语言</td>
+            <td colspan="7">
+                <input type="checkbox" name="c1" value="xx">英语
+                <input type="checkbox" name="c1" value="yd">日语
+                <input type="checkbox" name="c1" value="yx">俄语
+                <input type="checkbox" name="c1" value="yd">法语
+                <input type="checkbox" name="c1" value="yx">其他
+                语种<span class="d6"><input type="text" class="d5"></span>
+            </td>
+        </tr>
+        <tr class="h13">
+            <td rowspan="3">学习经历</td>
+            <td colspan="2">起止年月</td>
+            <td colspan="2">学校名称</td>
+            <td colspan="2">专业</td>
+            <td colspan="2">毕业或肄业</td>
+            <td>证书编号</td>
+        </tr>
+        <tr class="h14">
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h15">
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h16">
+            <td rowspan="4">工作经历</td>
+            <td colspan="2">起止年月</td>
+            <td colspan="2">工作单位名称</td>
+            <td>职务名称</td>
+            <td>薪金水平</td>
+            <td colspan="2">证明人及电话</td>
+            <td>离职原因</td>
+        </tr>
+        <tr class="h17">
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h18">
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h19">
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h20">
+            <td rowspan="5">技能</td>
+            <td colspan="2">编程语言</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h21">
+            <td colspan="2">编程工具</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h22">
+            <td colspan="2">运行环境</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h23">
+            <td colspan="2">测试工具</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h24">
+            <td colspan="2">数据库</td>
+            <td colspan="7"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h25">
+            <td rowspan="3">紧急联系人</td>
+            <td>姓名</td>
+            <td>称谓</td>
+            <td>性别</td>
+            <td colspan="2">职业及服务处所</td>
+            <td colspan="2">联系方式</td>
+            <td colspan="2">住址</td>
+        </tr>
+        <tr class="h26">
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h27">
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+            <td colspan="2"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h28">
+            <td colspan="10">注：如有亲属在本公司工作的，必须如实填写，否则将视为隐瞒申请资格</td>
+        </tr>
+        <tr class="h29">
+            <td colspan="10">注定送达地址：黑龙江省哈尔滨市香坊区文昌街236号6层 邮编：150040</td>
+        </tr>
+        <tr class="h30">
+            <td>其他附件</td>
+            <td colspan="9"><input type="text" class="t1"></td>
+        </tr>
+        <tr class="h31">
+            <td>声明</td>
+            <td colspan="9" class="d7">  &nbsp;&nbsp;&nbsp;兹声明，表载有关申明人的内容及所有附件材料全部属实，同意公司对其真实性进行保密性核查工作，如有任何失实或隐瞒，本人愿意承担由此所引致的一切责任。本人如获聘用，当严守公司有关条规，如有违规，除承担法律责任外，愿接受即时解雇及其他严厉处分，并放弃一切 上诉辩护权。<br/>
+                <span class="d8">申请人：  年 月 日</span>
+            </td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .d1{
+            border: 1px solid gray;
+            width: 150px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+        .d2{
+            border: 1px solid gray;
+            width: 150px;
+            height: 50px;
+            float: left;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+        .d3{
+            background-color: lightgray;
+            width: 300px;
+            height: 250px;
+            position: relative;
+            top: -15px;
+        }
+        .d4{
+            list-style-type: decimal;
+        }
+        .d5{
+            background-color: lightgray;
+            width: 300px;
+            height: 250px;
+            position: relative;
+            left: -150px;
+            display: none;
+        }
+        .d1:hover .d3{
+            display: block;
+        }
+        .d2:hover .d5{
+            display: block;
+        }
+        .d6{
+            list-style-type: decimal;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="d1">当当图书榜
+       <div class="d3">
+           <ul class="d4">
+               <li>追风筝的人</li>
+               <li>岛上的书</li>
+               <li>白夜行</li>
+               <li>和朋友们一起想办法</li>
+               <li>从你的全世界路过</li>
+           </ul>
+       </div>
+   </div>
+   <div class="d2">当当童书榜
+       <div class="d5">
+            <ul class="d6">
+                <li>和朋友一起想办法</li>
+                <li>小熊宝宝绘本</li>
+                <li>神奇校车</li>
+                <li>《地图》人文版</li>
+                <li>斯凯瑞金色图书</li>
+            </ul>
+       </div>
+   </div>
+</body>
+</html>

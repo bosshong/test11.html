@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--浮动
+    1.浮动的元素会脱离标准流
+    2.如前边有浮动元素，会依次排在后面
+    3.浮动是以标准流所在位置为起始点
+    4.同高度元素横向排满后，会被“挤“到下面
+    5.不同高度元素横向排满后，挤下后会被其他元素“卡”住
+    6.清除浮动：clear:both/left/right
+    7.一个div的范围是由它里面的标准流决定的，与里面的浮动内容无关
+
+
+    float：left；
+    float:right;
+
+
+    -->
+    <style>
+        .d1{
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            float: left;
+        }
+        .d2{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+
+        }
+        /*.d3{*/
+        /*width: 200px;*/
+        /*height: 100px;*/
+        /*background-color: red;*/
+        /*/!*float: right;*!/*/
+        /*}*/
+        /*.d4{*/
+        /*width: 200px;*/
+        /*height: 100px;*/
+        /*background-color: green;*/
+        /*/!*float: right;*!/*/
+        /*}*/
+        /*.d5{*/
+        /*width: 200px;*/
+        /*height: 100px;*/
+        /*background-color: #949400;*/
+        /*/!*float: left;*!/*/
+        /*}*/
+        .d0{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="d0">
+    <div class="d1"></div>
+    <div class="d2"></div>
+</div>
+<!--<div class="d3"></div>-->
+<!--<div class="d4"></div>-->
+<!--<div class="d5"></div>-->
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--选择器
+    一、基本选择器
+       1、标签（元素）选择器
+          div{
+            color: red;
+        }
+       2、类选择器：由class定义
+         .d1{
+            color: red;
+        }
+         (1)允许重名
+         (2)可以组合
+      3、id选择器：由id定义，#引用
+        （1）名字唯一（高级浏览器容错，可显示）
+        （2）id主要用于脚本中
+    二、复合选择器
+
+       1.并集选择器：风格完全或部分相同，可用并集选择器声明，多个选择器间调用“，”隔开
+       .d1，#id01
+       2.后代选择器（层级选择器）：
+       .d1 span{
+       }
+       3.交集选择器：第一个必须是标签选择器，第二个必须是类或id选择器
+                   选择器之间必须连续书写
+                   div.d1{
+                      color: #009400;
+                        }
+      4.E>F:子元素选择器，匹配所有E元素的第一层子元素F
+
+      5.E+F:毗邻选择器，匹配所有紧随E元素的之后的同级元素F（只对下面的邻居有效）
+    三、属性选择器
+    1、E[attr]:匹配所有具有attr属性的E元素
+              多个属性 div[title][class]{
+                        color: red;}
+    2、E[attr=val]:匹配所有attr属性等于val的E元素
+    3、E[attr~=val]:匹配所有attr属性具有多个空格分隔的值，其中一个值等于val的E元素
+    4、E[attr|=val]：匹配所有attr属性具有多个连字号（中划线）分隔的值，
+                     其中一个值以val开头的E元素
+                     div[title|="aa"]
+    四、
+
+      ：focus 焦点
+      ：hover 鼠标悬停
+      ：active 被激活（被选中）
+      ：link   未被访问的链接样式
+      ：visited 被访问过的样式
+
+      注意：1. ：hover 要在visited之后（部分浏览器hover在visited之前也好用）
+            2.：active必须：hover之后
+      ：empty 当元素为空时显示的样式
+      ：first-child
+
+    -->
+    <style>
+        /*.d1{*/
+            /*color: red;*/
+        /*}*/
+        /*#id01{*/
+            /*color: #009400;*/
+        /*}*/
+        /*.d1 ,#id01{*/
+
+        /*}*/
+
+        /*div.d1{*/
+            /*color: #009400;*/
+        /*}*/
+        /*p.d1{*/
+            /*color: red;*/
+        /*}*/
+
+     /*div{*/
+         /*color: red;*/
+     /*}*/
+        /*.d1>div,.di>p{*/
+            /*color: #009400;*/
+        /*}*/
+
+
+        /*.d1+div{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div[title][class]{*/
+            /*color: red;*/
+        /*}*/
+
+        /*div[title='bbb']{*/
+            /*color: red;*/
+        /*}*/
+        /*/!*div[class='d1']等价于div.d1*!/*/
+        /*div[title~="bb"]{*/
+
+        /*}*/
+        /*div[title|="aa"]{*/
+            /*color: #d90000;*/
+        /*}*/
+
+        /*div:empty{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*background: red;*/
+        /*}*/
+        a:link{
+            color: #1b10ff;
+        }
+
+        a:hover{
+            color: red;
+        }
+        a:active{
+             color: yellow;
+         }
+        a:visited{
+            color: green;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+ <a href="##">链接</a>
+<div></div>
+<div>hello</div>
+    <!--<div title="aa-bb" class="d1 d2 d3">hello11-1111</div>-->
+    <!--<div title="cc" class="d2">hello2222</div>-->
+    <!--<div title="aa-ss">hello333</div>-->
+</body>
+</html>

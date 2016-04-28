@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table{
+            width: 600px;
+            height: 50px;
+            font-weight: bolder;
+            text-align: center;
+            table-layout: fixed;
+        }
+        .d2{
+            border-bottom: 2px solid #FE4A00;
+        }
+        .d1,.d3,.d4{
+            border-bottom:2px solid #bbbbbb;
+            color: lightgray;
+        }
+        .d5{
+            border: 2px solid lightgray;
+            width: 600px;
+            height: 300px;
+            border-top-color:#FF7E45 ;
+            position: absolute;
+        }
+        .d6{
+            font-weight: bolder;
+            color: #666666;
+            margin-left: 20px;
+        }
+        .d7{
+            margin-left: 20px;
+        }
+        .d8,.d9,.d10,.d11{
+            display: inline-block;
+            width: 225px;
+            text-align: right;
+        }
+        .d12{
+            width: 110px;
+            height: 40px;
+            background-color: #FF4005;
+            border-radius: 5px;
+            color: white;
+            font-weight: bolder;
+        }
+        .d13{
+            background-color: lightgray;
+
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td class="d1">设置登录名</td>
+        <td class="d2">填写账户信息</td>
+        <td class="d3">设置支付方式</td>
+        <td class="d4">注册成功</td>
+    </tr>
+</table>
+<br /><br />
+<div class="d5">
+    <br /><form action="" method="post">
+    <span class="d6">填写验证码</span><br /><br />
+    <span class="d7"><img src="../image/2016-04-08_084000.jpg">校验码已发送到你的手机，15分钟内输入有效，请勿泄露</span><br /><br />
+    <label class="d8">手机号码</label>&nbsp;13300000000<br /><br />
+    <label class="d9" for="num">校验码</label> <input type="text" id="num"><span class="d13">51秒后可重新操作</span><br /><br />
+    <label class="d10"></label> <img src="../image/2016-04-07_215023.jpg">校验码已发送到你的手机，请查收<br /><br />
+    <label class="d11" for="but"></label> <input type="button" id="but" value="确认" class="d12">
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--固定定位
+    1.position:fixed; left right top bottom
+    2.固定定位脱离标准流
+    3.固定定位元素是以浏览器窗口或其他显示设备窗口为基准进行偏移
+    4.固定定位对浮动依然有效
+    -->
+    <style>
+        .d1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: fixed;
+            left: -80px;
+            top: 50px;
+        }
+        .d1:hover{
+            position: fixed;
+            left: 10px;
+            top: 50px;
+        }
+        .d2{
+            width: 200px;
+            height: 2000px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="d1"></div>
+<div class="d2"></div>
+</body>
+</html>

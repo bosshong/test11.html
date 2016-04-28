@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*块级元素block：与同级元素竖直排列，且左右撑满
+                    如：div,ul,li,p,dd,dt,dl
+          行级元素inline：与同级元素横向排列，且内容自适应，不会撑满
+                    如：span,a 不能改宽高
+                    img,input 能改宽高
+
+          标准流static:css规定的默认的块级元素与行级元素的排列方式
+
+         display:block   将当前元素转换为块级元素
+         display:inline 将当前元素转换为行级元素
+         display:inline-block: 行级块元素
+         display:run-in
+
+
+         /*display与visibility区别?
+            不占用空间
+           display:none;隐藏
+           display:block;显示
+
+           占用空间
+           visibility:hidden;隐藏 但是还会占据位置
+           visibility:visible;显示
+
+
+         */
+        /**/
+
+
+        .s1,.s2{
+            border: 1px solid red;
+            width:500px;
+            height: 200px;
+            display: inline-block;
+        }
+        li{
+            border: 1px solid red;
+            width: 300px;
+            display: inline;
+        }
+        div{
+            border: 1px solid green;
+            display: inline;
+
+        }
+    </style>
+</head>
+<body>
+<span class="s1">hello</span>
+<span class="s2">hello111</span>
+<ul>
+    <li>
+        aaa
+        <div>bbb</div>
+    </li>
+</ul>
+<div class="d1"></div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--相对定位
+    1.position:relative;  left  right top  bottom
+    2.相对定位不脱离标准流
+    3.相对定位元素会相对于它原来的位置进行偏移，不受父元素影响或其他祖先元素影响
+
+    相对定位，绝对定位允许负值
+    相对定位，绝对定位对浮动元素依然有效
+
+     position:static
+    -->
+    <style>
+        .d0{
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+
+        }
+        .d1{
+            width: 100px;
+            height: 100px;
+            background: black;
+            float: left;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+        .d2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="d0"></div>
+<div class="d1"></div>
+<div class="d2"></div>
+</body>
+</html>

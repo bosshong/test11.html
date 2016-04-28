@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .d1{
+
+            background: #f2f2f2;
+            width: 2000px;
+            height: 40px;
+            line-height: 40px;
+            position: fixed;
+            font-size: 13px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            line-height: 50px;
+            z-index: 2;
+        }
+        .d2{
+            list-style: none;
+            position: fixed;
+            top: -8px;
+            width: 2000px;
+        }
+        .d3{
+            float: left;
+            margin-left: 20px;
+
+        }
+        .d4{
+            background-image: url("../image/2016-04-19_154648.jpg");
+            width: 1010px;
+            height: 77px;
+            position: relative;
+            top: 50px;
+            left: 45px;
+        }
+        .d5{
+            position: relative;
+            top: 35px;
+            left: 55px;
+        }
+        .d6{
+            list-style: none;
+            font-size: 15px;
+            width: 2000px;
+            height: 40px;
+            display: table;
+
+        }
+        .d7{
+             float: left;
+             line-height: 38px;
+             color: black;
+
+             border: 1px solid #3784CB;
+             background: #3784CB;
+             width: 75px;
+             color: white;
+
+         }
+        .d8{
+            float: left;
+            line-height: 38px;
+            color: black;
+            position: relative;
+            left: -45px;
+            border: 1px solid #87C80C;
+            background: #87C80C;
+            width: 75px;
+            color: white;
+        }
+        .a1{
+            border: 1px solid #BCD5E5;
+            width: 685px;
+            height: 6300px;
+            position: relative;
+            top:50px;
+            left: 50px;
+
+        }
+        .a2{
+            border: 1px solid #BCD5E5;
+            width: 685px;
+            height: 40px;
+            text-align: center;
+
+        }
+        .a3{
+            position: relative;
+            top: 10px;
+        }
+        .a4{
+            font-size: 10px;
+            text-align: center;
+            line-height: 40px;
+            color: #999999;
+        }
+        .a5{
+            color: black;
+        }
+        .a6{
+            font-size: 14px;
+
+        }
+        .a7{
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+        .a8{
+            position: relative;
+            top: 60px;
+            font-size: 14px;
+        }
+        .a9{
+            position: relative;
+            top: 80px;
+            font-size: 14px;
+        }
+        .a10{
+            position: relative;
+            top: 100px;
+            font-size: 14px;
+        }
+        .a11{
+            position: relative;
+            top: 120px;
+            font-size: 14px;
+        }
+        .a12{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 140px;
+            left: 18px;
+        }
+        .a14{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a15{
+            position: relative;
+            top: 160px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a16{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 170px;
+            left: 18px;
+        }
+        .a18{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a19{
+            position: relative;
+            top: 180px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a20{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 180px;
+            left: 18px;
+        }
+        .a22{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a23{
+            position: relative;
+            top: 190px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a24{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 190px;
+            left: 18px;
+        }
+        .a26{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a27{
+            position: relative;
+            top: 200px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a28{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 200px;
+            left: 18px;
+        }
+        .a30{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a31{
+            position: relative;
+            top: 210px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a32{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 210px;
+            left: 18px;
+        }
+        .a34{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a35{
+            position: relative;
+            top: 220px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a36{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 220px;
+            left: 18px;
+        }
+        .a38{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .a39{
+            position: relative;
+            top: 230px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .a40{
+            border: 1px solid #0099CC;
+            width: 650px;
+            height: 460px;
+            position: relative;
+            top: 230px;
+            left: 18px;
+        }
+        .a42{
+            width: 646px;
+            height: 438px;
+            position: relative;
+            top: 0px;
+            background: #DDEDFB;
+
+        }
+        .b1{
+            position: relative;
+            top: 240px;
+            left: 2px;
+        }
+        .b2{
+            position: relative;
+            top: 260px;
+            left: 2px;
+            font-size: 20px;
+        }
+        .b3{
+            color: red;
+        }
+        .b4{
+            position: relative;
+            top: 280px;
+            left: 2px;
+            font-size: 20px;
+            float: left;
+        }
+        .b5{
+            border: 2px solid #CCD4D9;
+            width: 620px;
+            height: 150px;
+            position: relative;
+            top: 280px;
+            left: 60px;
+            border-radius: 4px;
+        }
+        .b6{
+            border: 1px solid #E6EAED;
+            width: 620px;
+            height: 40px;
+            position:relative;
+            top: 110px;
+        }
+        .b7{
+
+
+            position: relative;
+            left: -30px;
+            top: 5px;
+        }
+        .b8{
+
+            position: relative;
+            left: 5px;
+            top: -17px;
+        }
+        .b9{
+            color: white;
+            font-weight: bolder;
+            background-color: #5788AA;
+            width: 100px;
+            height: 40px;
+            position: relative;
+            top: -47px;
+            left: 520px;
+            text-align: left;
+            line-height: 40px;
+        }
+        .b11{
+            list-style: none;
+            position: relative;
+            top: 300px;
+            left: 20px;
+
+
+        }
+        .b12{
+            float: left;
+            border: 1px solid #CCD4D9;
+            width: 120px;
+            height: 40px;
+
+        }
+        .b13{
+            float: left;
+            border: 1px solid #CCD4D9;
+            width: 120px;
+            height: 40px;
+            margin-left: 20px;
+        }
+        .b14{
+            float: left;
+            border: 1px solid #CCD4D9;
+            width: 120px;
+            height: 40px;
+            margin-left: 20px;
+        }
+        .a1{
+            float: left;
+        }
+        .h1{
+            float: left;
+        }
+        .h2{
+            background-image: url("../image/2016-04-19_184019.jpg");
+            width: 301px;
+            height: 251px;
+            position: relative;
+            left: 65px;
+            top: 50px;
+        }
+        .h3{
+            width: 301px;
+            height: 180px;
+            position: relative;
+            left: 65px;
+            top: 60px;
+            border-top: 2px solid #B6262F;
+            border-left:1px solid #c9c9c9;
+            border-right:1px solid #DDDDDD;
+            border-bottom:1px solid #DDDDDD;
+        }
+        .h6{
+            color: #B6262F;
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+        .h4{
+            float: left;
+            list-style: square;
+            position: relative;
+            top: 20px;
+        }
+        .h5{
+            float: left;
+            list-style: square;
+            position: relative;
+            top: 20px;
+        }
+        .h7{
+            background-image: url("../image/2016-04-19_185804.jpg");
+            width: 301px;
+            height: 310px;
+            position: relative;
+            left: 65px;
+            top: 70px;
+        }
+        .h8{
+
+            width: 301px;
+            height: 500px;
+            position: relative;
+            left: 65px;
+            top: 80px;
+            border-top: 2px solid #3BB0DB;
+            border-left:1px solid #c9c9c9;
+            border-right:1px solid #DDDDDD;
+            border-bottom:1px solid #DDDDDD;
+        }
+        .h9{
+            color: #3395D8;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .h10{
+            position: relative;
+            top: 20px;
+
+        }
+        .h11{
+            background-image: url("../image/2016-04-19_190814.jpg");
+            width: 301px;
+            height: 214px;
+            position: relative;
+            left: 65px;
+            top: 90px;
+        }
+        .h12{
+
+            width: 301px;
+            height: 450px;
+            position: relative;
+            left: 65px;
+            top: 100px;
+            border-top: 2px solid #3BB0DB;
+            border-left:1px solid #c9c9c9;
+            border-right:1px solid #DDDDDD;
+            border-bottom:1px solid #DDDDDD;
+        }
+        .h13{
+            color: #3395D8;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .h14{
+            position: relative;
+            top: 20px;
+            list-style: square;
+
+        }
+        .h15{
+            background-image: url("../image/2016-04-19_191631.jpg");
+            width: 301px;
+            height: 214px;
+            position: relative;
+            left: 65px;
+            top: 110px;
+        }
+        .j1{
+            margin-left: 500px;
+        }
+        .d200{
+            width: 9000px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="d1">
+           <ul class="d2">
+               <li class="d3">脚本之家</li>
+               <li class="d3">软件下载</li>
+               <li class="d3">源码下载</li>
+               <li class="d3">在线工具</li>
+               <li class="d3">网页教程基础</li>
+               <li class="d3">服务器常用软件</li>
+               <li class="d3">手机版</li>
+               <li class="d3"><img src="../image/2016-04-19_153059.jpg">关注微信</li>
+           </ul>
+   </div>
+<div class="d4"></div>
+<div class="d5">
+    <ul class="d6">
+        <li class="d7">网页制作</li>
+        <li class="d7">网络编程</li>
+        <li class="d7">脚本专栏</li>
+        <li class="d7">脚本下载</li>
+        <li class="d7">数据库</li>
+        <li class="d7">CMS教程</li>
+        <li class="d7">电子书籍</li>
+        <li class="d7">平面设计</li>
+        <li class="d7">媒体动画</li>
+        <li class="d7">操作系统</li>
+        <li class="d7">网站运营</li>
+        <li class="d7">网络安全</li>
+        <li class="d8">在线手册</li>
+    </ul>
+</div>
+   <div class="d200">
+<div class="a1">
+         <div class="a2"><span class="a3">CSS清除浮动大全共8种方法</span> </div>
+    <div class="a4">作者：佚名 字体：[<span class="a5">增加 减小</span> ] 来源：互联网 时间：06-04 16:19:27 <span class="a5">我要评论</span></div>
+    <div class="a6">在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了，下面总结8种清除浮动的方法，测试已通过 ie chrome firefox opera，需要的朋友可以参考下</div>
+    <div class="a7"><img src="../image/2016-04-19_163930.jpg"><img src="../image/2016-04-19_163939.jpg"></div>
+    <div class="a8">清除浮动是每一个 web前台设计师必须掌握的机能。css清除浮动大全，共8种方法。 </div>
+    <div class="a9">浮动会使当前标签产生向上浮的效果，同时会影响到前后标签、父级标签的位置及 width height 属性。而且同样的代码，在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了。解决浮动引起的问题有多种方法，但有些方法在浏览器兼容性方面还有问题。</div>
+    <div class="a10">下面总结8种清除浮动的方法（测试已通过 ie chrome firefox opera，后面三种方法只做了解就可以了）： </div>
+    <div class="a11">1，父级div定义 height </div>
+    <div class="a12"><span class="a13">代码如下：<a href="a.html" target="f1" class="j1">查看代码</a></span>
+        <iframe class="a14"  name="f1"></iframe>
+    </div>
+    <div class="a15">原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。<br />
+
+        优点：简单、代码少、容易掌握<br />
+
+        缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题<br />
+
+        建议：不推荐使用，只建议高度固定的布局时使用<br />
+
+        2，结尾处加空div标签 clear:both <br />
+    </div>
+    <div class="a16"><span class="a17">代码如下：<a href="b.html" target="f2" class="j1">查看代码</a></span>
+        <iframe class="a18"  name="f2"></iframe>
+    </div>
+    <div class="a19">
+        原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度<br />
+
+        优点：简单、代码少、浏览器支持好、不容易出现怪问题<br />
+
+        缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不好<br />
+
+        建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法<br />
+
+        3，父级div定义 伪类:after 和 zoom<br />
+    </div>
+    <div class="a20"><span class="a21">代码如下：<a href="c.html" target="f3" class="j1">查看代码</a></span>
+        <iframe class="a22"  name="f3"></iframe>
+    </div>
+    <div class="a23">原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题<br />
+
+        优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等）<br />
+
+        缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。<br />
+
+        建议：推荐使用，建议定义公共类，以减少CSS代码。<br />
+
+        4，父级div定义 overflow:hidden <br />
+    </div>
+    <div class="a24"><span class="a25">代码如下：<a href="d.html" target="f4" class="j1">查看代码</a></span>
+        <iframe class="a26"  name="f4"></iframe>
+    </div>
+    <div class="a27">原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度<br />
+
+        优点：简单、代码少、浏览器支持好<br />
+
+        缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。<br />
+
+        建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用。<br />
+
+        5，父级div定义 overflow:auto <br />
+    </div>
+    <div class="a28"><span class="a29">代码如下：<a href="e.html" target="f5" class="j1">查看代码</a></span>
+        <iframe class="a30"  name="f5"></iframe>
+    </div>
+    <div class="a31">
+        原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度<br />
+
+        优点：简单、代码少、浏览器支持好<br />
+
+        缺点：内部宽高超过父级div时，会出现滚动条。<br />
+
+        建议：不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。<br />
+
+        6，父级div 也一起浮动<br />
+    </div>
+    <div class="a32"><span class="a33">代码如下：<a href="f.html" target="f6" class="j1">查看代码</a></span>
+        <iframe class="a34"  name="f6"></iframe>
+    </div>
+    <div class="a35">原理：所有代码一起浮动，就变成了一个整体<br />
+
+        优点：没有优点<br />
+
+        缺点：会产生新的浮动问题。<br />
+
+        建议：不推荐使用，只作了解。<br />
+
+        7，父级div定义 display:table <br />
+    </div>
+    <div class="a36"><span class="a37">代码如下：<a href="g.html" target="f7" class="j1">查看代码</a></span>
+        <iframe class="a38"  name="f7"></iframe>
+    </div>
+    <div class="a39">原理：将div属性变成表格<br />
+
+        优点：没有优点<br />
+
+        缺点：会产生新的未知问题。<br />
+
+        建议：不推荐使用，只作了解。<br />
+
+        8，结尾处加 br标签 clear:both <br />
+    </div>
+    <div class="a40"><span class="a41">代码如下：<a href="h.html" target="f8" class="j1">查看代码</a></span>
+        <iframe class="a42"  name="f8"></iframe>
+    </div>
+    <div class="b1"><img src="../image/2016-04-19_180243.jpg"></div>
+    <div class="b2">评论(<span class="b3">0</span> 人参与，<span class="b3">0</span> 条评论)</div>
+    <div class="b4"><img src="../image/2016-04-19_180744.jpg"></div>
+    <div class="b5">
+        <div class="b6">
+            <div class="b7"><img src="../image/2016-04-19_180841.jpg"></div>
+            <div class="b8"><img src="../image/2016-04-19_180847.jpg"></div>
+            <div class="b9">发布</div>
+        </div>
+    </div>
+    <div class="b10">
+        <ul class="b11">
+            <li class="b12"><img src="../image/2016-04-19_180758.jpg">微博登录 </li>
+            <li class="b13"><img src="../image/2016-04-19_180807.jpg">QQ登录</li>
+            <li class="b14"><img src="../image/2016-04-19_180816.jpg">手机登录</li>
+        </ul>
+    </div>
+</div>
+<div class="h1">
+      <div class="h2"></div>
+    <div class="h3">
+        <div class="h6">文章分类</div>
+        <ul class="h4">
+            <li>CSS教程</li><br />
+            <li>Div+CSS教程</li><br />
+            <li>浏览器兼容教程</li><br />
+        </ul>
+        <ul class="h5">
+            <li>css3</li><br />
+            <li>Web标准教程</li><br />
+            <li>CSS布局实例</li><br />
+        </ul>
+    </div>
+    <div class="h7"></div>
+    <div class="h8">
+        <div class="h9">大家感兴趣的内容</div>
+        <ol class="h10">
+            <li>css控制UL LI 的样式详解(推荐)</li><br />
+            <li>HTML设置超链接字体颜色和点击后的字体颜色</li><br />
+            <li>div水平垂直居中的完美解决方案</li><br />
+            <li>CSS 漂亮搜索框美化代码</li><br />
+            <li>CSS 首行缩进两个文字</li><br />
+            <li>css 中的background:transparent到底是什么意思有什么</li><br />
+            <li>css textarea 高度自适应,无滚动条</li><br />
+            <li>CSS自定义select下拉选择框的样式(不用其他标签模拟)</li><br />
+            <li>css 设置全屏背景图片</li><br />
+            <li>css中float left与float right的使用说明</li><br />
+        </ol>
+    </div>
+    <div class="h11"></div>
+    <div class="h12">
+        <div class="h13">最近更新的内容</div>
+        <ul class="h14">
+            <li>CSS制作箭头图标代码(圆，三角形，椭圆)</li><br />
+            <li>深入剖析CSS弹性盒模型flex</li><br />
+            <li>CSS display属性的table表格布局</li><br />
+            <li>你应该知道的3个CSS技巧</li><br />
+            <li>主流浏览器css兼容问题汇总</li><br />
+            <li>css制作黑色经典导航下拉菜单</li><br />
+            <li>深入理解CSS选择器优先级</li><br />
+            <li>CSS利用伪元素实现导航栏斜线分隔</li><br />
+            <li>你值得拥有的CSS下拉菜单效果</li><br />
+            <li>css实现移动端图片文字水平居中</li><br />
+        </ul>
+    </div>
+    <div class="h15"></div>
+</div>
+   </div>
+</body>
+</html>

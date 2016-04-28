@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table{
+            width: 600px;
+            height: 50px;
+            font-weight: bolder;
+            text-align: center;
+            table-layout: fixed;
+        }
+        .d1{
+            border-bottom: 2px solid #FE4A00;
+        }
+        .d2,.d3,.d4{
+            border-bottom:2px solid #bbbbbb;
+            color: lightgray;
+        }
+        .d5,.d7,.d9,.d10{
+            display: inline-block;
+            width: 110px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .d6{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .d8{
+            background-image: url("../image/2016-04-07_215023.jpg");
+            background-repeat: no-repeat;
+            background-position: right;
+            width: 50px;
+            height: 30px;
+        }
+        .d8:focus{
+            width: 60px;
+            box-shadow: 1px 1px 2px 2px dodgerblue;
+        }
+        .d11{
+            width: 170px;
+            height: 40px;
+            background-color: #FF4001;
+            color: white;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+        .d11:hover{
+            opacity: 0.8;
+        }
+        .d12{
+            color: orangered;
+        }
+        .d13:hover .d14{
+            display:inline-block;
+        }
+        .d14{
+            display: none;
+            width:180px;
+            height: 20px;
+            background-color: #FF7D28;
+            text-align: center;
+            valign:middle;
+        }
+        .d15 {
+            background-image: url("../image/2016-04-07_215023.jpg");
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td class="d1">设置登录名</td>
+        <td class="d2">填写账户信息</td>
+        <td class="d3">设置支付方式</td>
+        <td class="d4">注册成功</td>
+    </tr>
+</table>
+<br />
+
+<form action="test05作业2.1.html" method="post">
+    <label class="d5"> 所在国家/地区</label><select>
+    <option class="d15">中国大陆</option>
+</select>
+    <br /><br />
+    <label class="d6">手机号码</label>
+    <span class="d13"><input type="tel" class="d15" value="+86" ><span class="d14">请输入11位手机号</span></span>
+    <br /><br />
+    <label class="d7" for="yzm">验证码</label><input type="text" id="yzm" value="phsc" class="d8"><br /><br />
+    <label class="d9"></label><input type="checkbox" checked id="ty">同意<span class="d12">《淘宝服务协议》</span> <br /><br />
+    <label class="d10"></label> <input type="submit" value="下一步" id="xyb" class="d11">
+</form>
+
+
+
+</body>
+</html>

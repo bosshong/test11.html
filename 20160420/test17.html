@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--变高布局-->
+    <style>
+        /*比例法*/
+        /*高度自适应布局*/
+        .header,.footer{
+            border: 1px solid black;
+            width: 600px;
+            height: 60px;
+            margin:0 auto;
+        }
+        .container{
+            border: 1px solid black;
+            width: 600px;
+            margin:0 auto;
+             /*最小高度*/
+            min-height: 300px;
+            /*最大高度*/
+            max-height: 500px;
+
+        }
+        .content{
+            border: 1px solid black;
+            width: 500px;
+            height: 400px;
+            float: left;
+        }
+        .side{
+            border: 1px solid black;
+            width: 96px;
+            height: 400px;
+            float: left;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container">
+       <div class="content"></div>
+       <div class="side"></div>
+    </div>
+    <div class="footer"></div>
+
+
+</body>
+</html>

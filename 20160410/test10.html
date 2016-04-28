@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .menu{
+            list-style: none;
+            position: relative;
+        }
+        .menu li{
+            float: left;
+            margin-left: 20px;
+            width: 100px;
+            height: 50px;
+            background:darkgray ;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-left: 1px solid #3c3c3c;
+            border-left: 1px solid #5c5c5c;
+        }
+        .menu_second{
+            list-style: none;
+            position: absolute;
+            left: -100px;
+            display:none;
+        }
+        .menu_second li{
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom:1px solid red;
+            border-top: 1px solid green;
+            float: none;
+        }
+        .d1:hover .menu_second{
+            display:block;
+        }
+        .d2{
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom:1px solid red;
+            border-top: 1px solid green;
+            float: none;
+            position: absolute;
+            left: 200px;
+            top: 31px;
+            display: none;
+            list-style: none;
+            border-spacing: 0px;
+        }
+        .d3:hover .d2{
+            display: block;
+        }
+        .d4:hover{
+            background-color:blue;
+        }
+        .d5:hover{
+            background-color:blue;
+        }
+
+        .d6:hover{
+            background-color: blue;
+        }
+
+        .d7:hover{
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li class="d1">菜单1
+        <!--二级菜单-->
+        <ul class="menu_second">
+            <li>二级1</li>
+            <li class="d3">二级2
+                <ul class="d2">
+                    <li class="d4">三级1</li>
+                    <li class="d5">三级2</li>
+                    <li class="d6">三级3</li>
+                    <li class="d7">三级4</li>
+                </ul>
+            </li>
+            <li>二级3</li>
+            <li>二级4</li>
+        </ul>
+    </li>
+    <li>菜单2</li>
+    <li>菜单3</li>
+
+
+</ul>
+</body>
+</html>
+<!--整体浮动 局部定位-->

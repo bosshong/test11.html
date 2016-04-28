@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--浏览器兼容性问题
+    css Hack（黑客 骇客）:不同浏览器对css的解析结果不同，会导致相同的css输出页面效果不同
+                         此时需要csshack技术来解决浏览器局部兼容性问题
+
+    css Hack 原理：利用书写顺序和不同浏览器对一些特定书写方法的解析方式不同
+                  而达到不同的效果
+
+
+    _background-color   ie6
+    *background-color   ie6 ie7
+    background-color: green!important;  ie7及其以上版本  !important 优先级最高
+    background-color: #803d2d \0;       ie8及其以上版本
+    background-color: #36ff83 \9;       ie6---ie10
+    
+    >background-color: black;           ie7-ie8 ??
+    *+background-color: #d7afde         ie7     ??
+
+    ie条件注释（ie的if条件）
+    （1）ie10及以上不支持
+    （2）ie专属，其他浏览器当做普通注释完全忽略
+    1.if ie 6           等于ie6
+    2.[if lt ie 7]      等于ie6
+      [if lte ie 7]     小于ie7         lt----less than
+     [if gt ie 7]       小于等于ie7      gt---greater than
+     [if gte ie 7]      大于等于ie7      gte---greater than equal
+
+
+
+
+    1.不同浏览器默认的外边距不一致问题
+      解决：body{
+            /*css重置（复位）*/
+            margin: 0;
+            padding:0;
+        }
+
+    2.图片超链接有边框（ie10及以下）
+       解决：a img{
+       border:0\9
+       }
+
+    3.ie6\7浮动问题
+      解决：（1）  *position:absolute;
+                  *left:0;
+                  *top:0;
+                  *z-index:-1;
+            (2)    clear:both;
+
+    4.ie6   3像素bug问题
+       一个元素浮动，另一个元素不浮动，中间会产生3px空隙
+        解决：（1）_margin-right:-3px;
+              (2) 另一个元素也浮动
+
+    5.letter-spacing兼容性问题
+       解决：*margin-right:30px;
+
+    6.ie6 伪类问题
+    .d3:first-letter{
+            /*首字符设置样式*/
+            color: red;
+        }
+        ie6在处理伪类时，如伪类名称中包含“-”，则伪类明后必须跟一个“空格”  --ie6 bug
+
+    7.ie6 1光标高度问题
+     解决: _overflow:hidden;/*溢出:隐藏 overflow:scroll 滚动条*/
+
+    8.透明度问题
+     opacity:0.5;高级浏览器支持 0-1
+     filter:alpha(opacity=50);针对ie低版本 0-100
+
+    9.ie6不支持png图片格式
+    background:url("image/a1.png");
+    解决：1_background:url(a1.gif);
+     2._background:none;
+     _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='a2.png')
+
+
+    10.ie6 不支持最大最小高度问题
+     min-height max-height
+     解决：最小高度:min-height:300px;
+                   -height:300px;
+          最大高度： max-height:500px
+                _height:500px
+                overflow:hidden
+    11.
+
+  -->
+    <style>
+        /*body{*/
+            /*/!*css重置（复位）*!/*/
+            /*margin: 0;*/
+            /*padding:0;*/
+        /*}*/
+        /*.d1{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background-color: red;*/
+            /*_margin-top:-100px;*/
+            /*_background-color:blue;*/
+            /**background-color:yellow;*/
+            /*background-color: green!important;*/
+            /*background-color: #803d2d \0;*/
+            /*background-color: #36ff83 \9;*/
+            /*>background-color: black;*/
+            /**+background-color: #d7afde;*/
+            /*color: yellow;*/
+        /*}*/
+         /*chrome safari opera*/
+        /*@media all and(-webkit-min-device-pixel-ratio:0 ) {*/
+           /*.d1{*/
+               /*background-color: green;*/
+               /*color: #455a80;*/
+           /*}*/
+        /*}*/
+        /*/!*firefox--ff*!/*/
+        /*@-moz-document url-prefix(){*/
+            /*.d1{*/
+                /*background-color: #455a80;*/
+                /*color: #d90000;*/
+            /*}*/
+        /*}*/
+
+        /*a img{*/
+            /*border: 0\9;*/
+        /*}*/
+
+        /*.d2{*/
+            /*background: red;*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*float: left;*/
+
+
+        /*}*/
+        /*.d3{*/
+            /*background: blue;*/
+            /*/!*width: 200px;*!/*/
+            /*/!*height: 200px;*!/*/
+            /*/!**float: left;*!/*/
+            /*/!**position: absolute;*!/*/
+            /*/!*left: -200px;*!/*/
+            /*/!**z-index:-1;*!/*/
+            /*/!*clear:both;*!/*/
+
+        /*}*/
+
+        /*.d2{*/
+           /*font-size: 30px;*/
+
+        /*}*/
+        /*.d2 span{*/
+            /*letter-spacing: 30px;*/
+            /**margin-right: 30px;*/
+        /*}*/
+
+        /*.d3:first-letter{*/
+            /*/!*首字符设置样式*!/*/
+            /*color: red;*/
+        /*}*/
+
+
+        /*.d3{*/
+            /*width: 200px;*/
+            /*background: red;*/
+            /*height: 1px;*/
+            /*overflow: hidden;*/
+        /*}*/
+
+        /*.d3{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background: red;*/
+            /*opacity: 0.5;*/
+            /*filter: alpha(opacity=50);*/
+        /*}*/
+
+      /**/
+       /*body{*/
+           /*background: red;*/
+       /*}*/
+        /*.d3{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background: url("../image/a1.png");*/
+        /*_background: none;*/
+        /*filter:progid:DXImageTransform.Microsoft.Alpha*/
+
+        /*}*/
+
+
+        /*.d3{*/
+            /*width: 300px;*/
+            /*border: 1px solid red;*/
+            /*/!*min-height: 300px;*!/*/
+            /*/!*_height: 300px;*!/*/
+            /*_height: 500px;*/
+            /*height: 500px;*/
+            /*max-height: 500px;*/
+            /*/!*_overflow: hidden;*!/*/
+        /*}*/
+
+        .d3{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+
+    <!--[if ie 6]>
+    <style>
+        .d3{
+            background: green;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if ie 10]>
+    <style>
+        .d3 {
+            background: #3aa2ff;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<!--<div class="d1">ddd</div>-->
+<!--<a href=""><img src="../image/a5e3e5869d582ade64dcd325790db2a4.jpg"></a>-->
+<!--<div class="d2"><span>你好</span><span class="d3"> :</span><span class="d4"> 哈哈</span> </div>-->
+<div class="d3">
+
+</div>
+</body>
+</html>

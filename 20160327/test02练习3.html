@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table{
+            width: 300px;
+            height: 300px;
+            table-layout: fixed;
+
+        }
+        table tr{
+            width: 10px;
+            height: 10px;
+            table-layout: fixed;
+        }
+        table tr td{
+            border: 1px solid green;
+        }
+        table tr:hover{
+            background-color: yellow;
+        }
+        table tr th{
+            background-color: blue;
+        }
+        table .d1{
+            background-color: aquamarine;
+        }
+        table .d2{
+            background-color: aquamarine;
+        }
+        table .d3{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<table cellspacing="0">
+    <tr>
+        <th>Error Summary</th>
+        <th>Error Date</th>
+        <th>Failed XML Message</th>
+    </tr>
+    <tr  class="d1">
+        <td>java</td>
+        <td>15.13</td>
+        <td>View&Edit Message</td>
+    </tr>
+    <tr>
+        <td>information</td>
+        <td>07.01</td>
+        <td>View&Edit Message</td>
+    </tr>
+    <tr class="d2">
+        <td>blah</td>
+        <td>07.01</td>
+        <td>View&Edit Message</td>
+    </tr>
+    <tr>
+        <td>information</td>
+        <td>23.11</td>
+        <td>View&Edit Message</td>
+    </tr>
+    <tr class="d3">
+        <td>information</td>
+        <td>23.11</td>
+        <td>View&Edit Message</td>
+    </tr>
+</table>
+</body>
+</html>
